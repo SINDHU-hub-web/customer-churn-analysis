@@ -1,74 +1,54 @@
-# Customer Churn Analysis
+# Customer Churn Analysis – Banking
 
-## 📌 Project Overview
+## Project Overview
+This project analyzes customer churn in a banking dataset to identify customer segments with higher churn rates and provide recommendations to improve customer retention.
 
-Customer churn is a major challenge for subscription-based businesses. 
-This project analyzes customer data to understand why customers may cancel 
-their subscriptions and identify customer segments that may be at higher risk of churn.
+The dataset contains 10,000 customer records. Python and data analysis libraries were used to explore customer characteristics and understand patterns associated with churn.
 
-## 🎯 Business Objective
-
-The objective of this analysis is to:
-
-- Understand customer churn patterns
-- Identify potential factors associated with churn
-- Analyze customer segments at risk
-- Explore relationships between customer characteristics and churn
-- Provide data-driven insights that can support customer retention strategies
-
-## 🛠️ Tools & Technologies
-
+## Tools and Technologies
 - Python
+- Google Colab
 - Pandas
 - NumPy
 - Matplotlib
 - Seaborn
-- SQL
-- Statistics
-- Exploratory Data Analysis (EDA)
 
-## 📊 Dataset
+## Dataset Information
+The dataset contains 10,000 rows and 14 columns.
 
-The dataset contains customer information such as:
+The target variable is `Exited`:
+- `0` = Customer stayed
+- `1` = Customer exited
 
-- Customer ID
-- Age
-- Gender
-- City
-- Subscription Type
-- Tenure
-- Monthly Charges
-- Total Charges
-- Payment Method
-- Contract Type
-- Support Calls
-- Internet Usage
-- Last Login
-- Customer Satisfaction Score
-- Churn Status
+## Analysis Performed
+- Overall customer churn rate
+- Churn by age group
+- Churn by gender
+- Churn by geography
+- Churn by number of bank products
+- Churn by active membership
+- Churn by customer tenure
+- Churn by credit score
+- Churn by account balance
+- Churn by credit card ownership
+- Churn by estimated salary
 
-## 🔍 Analysis Performed
+## Key Findings
+- The overall customer churn rate is approximately 20.37%.
+- Customers aged 46–55 had the highest churn rate among the age groups analyzed.
+- Female customers had a higher churn rate than male customers.
+- Customers in Germany had a higher churn rate than customers in France and Spain.
+- Customers with three or four products had particularly high churn rates. The four-product group contained only 60 customers, so this result should be interpreted cautiously.
+- Inactive members had a higher churn rate than active members.
 
-- Data understanding and data type analysis
-- Missing-value and suspicious-value checks
-- Numerical and categorical variable analysis
-- Exploratory Data Analysis
-- Customer segmentation
-- Churn analysis
-- Correlation analysis
-- Statistical analysis
-- Data visualization
+## Business Recommendations
+- Investigate the reasons for high churn among customers aged 46–55.
+- Explore customer feedback and service experiences to understand the gender and geography differences.
+- Review the suitability and customer experience of multi-product offerings.
+- Develop engagement strategies for inactive customers.
+- Monitor churn rates regularly and evaluate retention initiatives using data.
 
-## 📈 Key Insights
+## Conclusion
+This project demonstrates how Python-based exploratory data analysis can help identify customer segments associated with churn and support data-informed customer retention decisions.
 
-Key findings will be added after completing the exploratory data analysis.
-
-## 💡 Business Recommendations
-
-Recommendations will be developed based on the findings from the analysis.
-
-## 👤 Author
-
-**Sindhu V**
-
-Aspiring Data Analyst | SQL | Python | Pandas | Statistics | Data Visualization
+*Note: These findings show associations in the dataset and do not establish that any factor directly causes churn.*
